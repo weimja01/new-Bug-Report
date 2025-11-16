@@ -32,9 +32,14 @@ linkedListIterator<t>::linkedListIterator(node<t> *ptr)
 template <class t>
 t &linkedListIterator<t>::operator*()
 {
-   
-    return *(current ->data);
+  
+    if (current != nullptr)
+    {
+        return *(current->data);
+    }
+    return t();
 }
+
 
 template <class t>
 linkedListIterator<t> linkedListIterator<t>::operator++()
