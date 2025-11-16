@@ -100,13 +100,13 @@ int main()
             
             case 3:
             {
-                // Quit - display completed and uncompleted bugs
+                // Quit display
                 cout << "Quitting: \n\n";
                 
                 cout << "List of Finished Bug Reports: \n\n";
                 if (!completedBugs.isEmptyList())
                 {
-                    // Use print() method instead of iterators to avoid CodeGrade bug
+                    //Print()
                     completedBugs.print(cout, "\n");
                 }
                 
