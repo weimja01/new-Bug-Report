@@ -17,7 +17,7 @@ using namespace std;
 bool isValidDate(const string& date)
 {
     // Regex pattern for yyyy-mm-dd format
-    regex datePattern(R"(^\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$)");
+    regex datePattern(R"(^\d{4}-(0?[1-9]|1[0-2])-(0?[1-9]|[12][0-9]|3[01])$)");
     return regex_match(date, datePattern);
 }
 
